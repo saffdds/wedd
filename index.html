@@ -4,76 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Firefox: il miglior browser</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    h1, h2 {
-      color: #d84315;
-    }
-
-    #txt {
-      font-size: 1.2em;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    ol {
-      counter-reset: item;
-      padding-left: 20px;
-    }
-
-    li {
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    li::before {
-      content: counter(item) ". ";
-      counter-increment: item;
-      color: red;
-      font-weight: bold;
-    }
-
-    a {
-      color: #1565c0;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    img {
-      margin-top: 10px;
-      border-radius: 8px;
-    }
-
-    iframe {
-      margin-top: 20px;
-      max-width: 100%;
-    }
-  </style>
-  <script>
-    function startTime() {
-      const today = new Date();
-      let h = today.getHours();
-      let m = today.getMinutes();
-      let s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('txt').textContent = `${h}:${m}:${s}`;
-      setTimeout(startTime, 500);
-    }
-
-    function checkTime(i) {
-      return i < 10 ? "0" + i : i;
-    }
-  </script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
 </head>
 <body onload="startTime()">
   <div id="txt"></div>
@@ -123,18 +55,3 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DoalfWI_6CE?si=AivsLhBmFSIAKu4M" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
